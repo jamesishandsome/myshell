@@ -1,0 +1,16 @@
+{
+  "name": "myshell",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/office-js": "^1.0.468"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@microsoft/office-js": "^1.1.106",
+    "@microsoft/office-js-helpers": "^1.0.2"
+  }
+}

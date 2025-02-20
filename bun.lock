@@ -1,0 +1,50 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "myshell",
+      "dependencies": {
+        "@microsoft/office-js": "^1.1.106",
+        "@microsoft/office-js-helpers": "^1.0.2",
+      },
+      "devDependencies": {
+        "@types/bun": "latest",
+        "@types/office-js": "^1.0.468",
+      },
+      "peerDependencies": {
+        "typescript": "^5.0.0",
+      },
+    },
+  },
+  "packages": {
+    "@microsoft/office-js": ["@microsoft/office-js@1.1.106", "", {}, "sha512-LKU+BvDNtWSnCiN2qNV9pNe4Pb7ZrDzJXav3IcHwnRSmo84Yj7zXfH3zTdeiY8y9135LkVtBx09/JDUydBacGQ=="],
+
+    "@microsoft/office-js-helpers": ["@microsoft/office-js-helpers@1.0.2", "", { "dependencies": { "@types/microsoftteams": "^1.2.1", "@types/office-js": "^0.0.51", "core-js": "^2.5.3", "lodash-es": "^4.17.5", "rxjs": "^5.5.6" } }, "sha512-zTnWWcwdUjbGwkgslh7LN+ArRSWFScMMqy4+5rUUeZUUkQcGVMXMfCZ2n8Tzm0S9BJY7mcm1o27z5RSVb1Anfw=="],
+
+    "@types/bun": ["@types/bun@1.2.2", "", { "dependencies": { "bun-types": "1.2.2" } }, "sha512-tr74gdku+AEDN5ergNiBnplr7hpDp3V1h7fqI2GcR/rsUaM39jpSeKH0TFibRvU0KwniRx5POgaYnaXbk0hU+w=="],
+
+    "@types/microsoftteams": ["@types/microsoftteams@1.9.6", "", {}, "sha512-uMsY7rzusyFCS3PiYIPYBleLXG0uJTp7rrhOyJyTGWGY16D9y1Hvb4Q9L6Ddapza4fRj7xnUAnnqvIRJQ98k4w=="],
+
+    "@types/node": ["@types/node@22.13.4", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-ywP2X0DYtX3y08eFVx5fNIw7/uIv8hYUKgXoK8oayJlLnKcRfEYCxWMVE1XagUdVtCJlZT1AU4LXEABW+L1Peg=="],
+
+    "@types/office-js": ["@types/office-js@1.0.468", "", {}, "sha512-1qhyTmxLytunRuXj4oJK3G49YoqPls6h8AdtDqie/U8uCleS0K2OutwJKkdU45qsmoOeLiOuXyEpRBLKS+YYaA=="],
+
+    "@types/ws": ["@types/ws@8.5.14", "", { "dependencies": { "@types/node": "*" } }, "sha512-bd/YFLW+URhBzMXurx7lWByOu+xzU9+kb3RboOteXYDfW+tr+JZa99OyNmPINEGB/ahzKrEuc8rcv4gnpJmxTw=="],
+
+    "bun-types": ["bun-types@1.2.2", "", { "dependencies": { "@types/node": "*", "@types/ws": "~8.5.10" } }, "sha512-RCbMH5elr9gjgDGDhkTTugA21XtJAy/9jkKe/G3WR2q17VPGhcquf9Sir6uay9iW+7P/BV0CAHA1XlHXMAVKHg=="],
+
+    "core-js": ["core-js@2.6.12", "", {}, "sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ=="],
+
+    "lodash-es": ["lodash-es@4.17.21", "", {}, "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="],
+
+    "rxjs": ["rxjs@5.5.12", "", { "dependencies": { "symbol-observable": "1.0.1" } }, "sha512-xx2itnL5sBbqeeiVgNPVuQQ1nC8Jp2WfNJhXWHmElW9YmrpS9UVnNzhP3EH3HFqexO5Tlp8GhYY+WEcqcVMvGw=="],
+
+    "symbol-observable": ["symbol-observable@1.0.1", "", {}, "sha512-Kb3PrPYz4HanVF1LVGuAdW6LoVgIwjUYJGzFe7NDrBLCN4lsV/5J0MFurV+ygS4bRVwrCEt2c7MQ1R2a72oJDw=="],
+
+    "typescript": ["typescript@5.7.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw=="],
+
+    "undici-types": ["undici-types@6.20.0", "", {}, "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="],
+
+    "@microsoft/office-js-helpers/@types/office-js": ["@types/office-js@0.0.51", "", {}, "sha512-NIw11M12C5SDD5fsv6qd3ZG1GnLNAiLBiGBHsrW8XX1c7gYKXpAClOiOcFLGGw46cwld0XhW6EsZ6X6CEEPL/w=="],
+  }
+}
