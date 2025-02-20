@@ -9,7 +9,7 @@ async function run() {
             thirdWordFontSize : 0
         }
         // if the first paragraph contains more than 3 words:
-        let paragraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        let paragraph = context.document.body.paragraphs.getFirst();
         const words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
         words.load(["text","font"]);
         await context.sync();
