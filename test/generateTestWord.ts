@@ -2,7 +2,7 @@ import * as path from "node:path";
 import {Document, Packer, Paragraph, TextRun} from "docx";
 
 
-// normal
+// normal bold single 40
 const doc1 = new Document({
     sections: [
         {
@@ -37,7 +37,7 @@ Packer.toBuffer(doc1).then(async (buffer) => {
 });
 
 
-// normal
+// mixed bold and mixed underline and mixed size
 const doc2 = new Document({
     sections: [
         {
@@ -45,13 +45,20 @@ const doc2 = new Document({
             children: [
                 new Paragraph({
                     children: [
-                        new TextRun({text: "In ", bold: false}),
+                        new TextRun({text: "I", bold: true}),
+                        new TextRun({text: "n ", bold: false}),
                         new TextRun({
-                            text: "the ", underline: {
+                            text: "th", underline: {
                                 type: "none",
                             }
                         }),
-                        new TextRun({text: "small", size: 100}),
+                        new TextRun({
+                            text: "e ", underline: {
+                                type: "single",
+                            }
+                        }),
+                        new TextRun({text: "sma", size: 100}),
+                        new TextRun({text: "ll", size: 20}),
                         new TextRun({text: " quaint", bold: true}),
                         new TextRun({
                             text: ", charming town of Willowbrook, life unfolds at a gentle pace. The cobblestone streets are lined with colorful, centuries - old houses, each with its own unique story. A meandering river runs through the heart of the town, its waters reflecting the changing hues of the sky.\n" +
@@ -72,7 +79,7 @@ Packer.toBuffer(doc2).then(async (buffer) => {
 });
 
 
-// Start from empty paragraph + period or full stop
+// Start from empty paragraph + period or full stop + bold + double + 100
 const doc3 = new Document({
     sections: [
         {
@@ -110,7 +117,7 @@ Packer.toBuffer(doc3).then(async (buffer) => {
 });
 
 
-// start from empty paragraph + comma
+// start from empty paragraph + comma + bold + double + 100
 const doc4  = new Document({
     sections: [
         {

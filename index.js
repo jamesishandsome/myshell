@@ -1,6 +1,6 @@
 // $("#run").on("click", () => tryCatch(run));
 
-export default async function run() {
+async function run() {
   await Word.run(async (context) => {
 
     const wordsList = []
@@ -39,6 +39,8 @@ export default async function run() {
         return;
     }
 
+    console.log(wordsList);
+
     // Get font properties of first 3 words
     res.firstWordBold = !!wordsList[0].font.bold;
     res.secondWordUnderline = wordsList[1].font.underline;
@@ -46,7 +48,6 @@ export default async function run() {
     console.log(res.firstWordBold? "First word is bold" : "First word is not bold");
     console.log(`Second word is ${res.secondWordUnderline} underlined`);
     console.log(`Third word font size is ${res.thirdWordFontSize}`);
-    return res;
   });
 }
 
@@ -58,3 +59,11 @@ async function tryCatch(callback) {
     console.error("Error occurred:", error);
   }
 }
+
+
+
+const main = async () => {
+    await tryCatch(run);
+}
+
+main();
