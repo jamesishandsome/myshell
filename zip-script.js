@@ -85,7 +85,6 @@ export const run = async (file) => {
                             }
                         )
                     } else {
-                        console.log()
                     }
                 }
             )
