@@ -39,7 +39,6 @@ async function run() {
         return;
     }
 
-    console.log(wordsList);
 
     // Get font properties of first 3 words
     res.firstWordBold = !!wordsList[0].font.bold;

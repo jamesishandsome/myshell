@@ -151,3 +151,6 @@ export const run = async (file) => {
         console.log(err)
     }
 }
+
+
+await run('./test/test1')
