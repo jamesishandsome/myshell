@@ -2,15 +2,23 @@
   "name": "myshell",
   "module": "index.ts",
   "devDependencies": {
+    "@swc-node/register": "^1.10.9",
     "@types/bun": "latest",
     "@types/office-js": "^1.0.468"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
+  "scripts": {
+    "generate:test": "bun test/generateTestWord.ts"
+  },
   "type": "module",
   "dependencies": {
     "@microsoft/office-js": "^1.1.106",
-    "@microsoft/office-js-helpers": "^1.0.2"
+    "@microsoft/office-js-helpers": "^1.0.2",
+    "@types/mocha": "^10.0.10",
+    "docx": "^9.2.0",
+    "mocha": "^11.1.0",
+    "office-addin-mock": "^3.0.3"
   }
 }
